@@ -13,7 +13,7 @@ class BookList extends Component {
           {books.map((book) => {
             return (
               <Col key={book.asin}>
-                <SingleBook book={book} />
+                <SingleBook key={book.asin} book={book} />
               </Col>
             );
           })}
